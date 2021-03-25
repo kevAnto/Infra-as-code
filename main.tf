@@ -209,3 +209,5 @@ resource "aws_instance" "DB_Instance" {
       Name = "New_Priv_DB_Instance"
   }
 }
+#do not forget  elastic ip for the ec2 in the public subnet
+#and s3&ssm role for ec2 
