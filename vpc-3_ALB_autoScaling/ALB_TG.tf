@@ -2,7 +2,7 @@ resource "aws_lb" "My_ALB" {
   name               = "My-ALB"  
   internal           = false
   load_balancer_type = "application"
-  security_groups    = ["sg-0f7e77e9d079013e8"]
+  security_groups    = ["sg-05a7764c699471d6b"]
   subnets            = data.aws_subnet_ids.all.ids
   ip_address_type    = "ipv4"
   tags = {
@@ -41,7 +41,7 @@ resource "aws_lb_target_group" "ALB_TG" {
   name     = "ALB-TG"
   port     = 80
   protocol = "HTTP"
-  vpc_id   = "vpc-05ed605a861ac0453"
+  vpc_id   = data.aws_vpc.default.id
   tags = {    
     name = "ALB_TG"   
   }
