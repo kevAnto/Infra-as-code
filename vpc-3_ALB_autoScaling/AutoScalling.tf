@@ -3,7 +3,7 @@ resource "aws_launch_template" "My_template" {
   image_id      = "ami-0c94855ba95c71c99"
   instance_type = "t2.micro"
   key_name      = "KeyPair"
-  vpc_security_group_ids   = ["sg-0f7e77e9d079013e8"]
+  vpc_security_group_ids   = ["sg-0b3a9411551582605"]
   user_data = filebase64("install_apache.sh")
   
   #if you would like to add extra volume to the launched instance use the block below
