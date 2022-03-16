@@ -1,9 +1,9 @@
 # We're going to create a basic Vnet with two subnets and 
 # use Terraform cloud for remote state storage
 
-#########################
+###########################
 # CONFIGURATION
-#########################
+###########################
 
 terraform {
   required_providers {
